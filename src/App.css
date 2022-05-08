@@ -1,38 +1,255 @@
+*{
+  background-color: black;
+}
 .App {
+
+  background-color: black;
+}
+.headclass
+{
+  width: 100%;
+  height:19%;
+  padding:0.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+position: fixed;
+border-bottom: 1px solid rgb(218,165,32);
+}
+.headclass img
+{
+width:9%;
+object-fit: cover;
+}
+.search
+{ width:70%;
+  padding:4px;
+  margin-left:7px;
+  padding-left: 10px;
+  display: flex;
+flex-direction: row;
+}
+.search input
+{
+  height:30%;
+  width:60%;
+background-color: rgb(209, 211, 213);
+border:3px solid rgb(218, 165, 32);
+margin-top:75px;
+margin-right: 10px;
+
+}
+.iconserch h1 
+{
+  width:80%;
+  margin-top:80px;
+  color:rgb(218, 165, 32);
+}
+.menu
+{
+  width:11%;
+  height:300px;
+  padding-top:20%;
+  padding-left:0.5%;
+  margin-left:0.5%;
+  margin-top:0%;
+  display: flex;
+  flex-direction: column;
+}
+.barmenu 
+{
+  padding:5px;
+  width: 100%;
+  color:rgb(218,165,32);
+  
+}
+.barmenu button
+{
+  width:100%;
+  height: 40px;
+ color: rgb(218,165,32);
+}
+.navslid
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navclass 
+{ 
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color:rgb(218,165,32); 
+  border: 1px solid rgb(233, 179, 71);
+}
+.lib{
+  display: flex;
+ color:rgb(218,165,32); 
+}
+
+.lib h4
+{color:rgb(218,165,32);
+padding-top:7px;
+padding-left:7px;
+letter-spacing:1.5px;}
+.list
+{
+  width:98%;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:50px;
+}
+.cart
+{
+  width:30%;
+  height:450px;
+  background-color: rgb(117, 117, 117);
+  margin-inline: auto;
+  color: rgb(212, 240, 240);
+  margin:10px;
+  border:4px solid rgb(216, 162, 12);
+  border-radius:8px ;
+  padding-top:2px;
+}
+.cart img
+{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  padding-top:0%;
+}
+.cart h1{
+  color:rgb(216, 162, 12);
   text-align: center;
+  background-color:  rgb(117, 117, 117);;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cart p
+{
+  text-align: center;
+  padding:1%;
+  height: 50px;
+  overflow-y: scroll;
+  background-color:  rgb(117, 117, 117);;
+  color: black;
+  
 }
+.cart button
+{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  text-align:center;
+  width:40px;
+  height:40px;
+  border-radius:50px;
+  padding-bottom:2px;
+  font-size:20;
+  background-color: rgb(218,165,32);
+
 }
+.list :hover
+{
+ transform: translateY(20px);
+ opacity:0.5;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.containerslide
+{
+  width:500px; 
+  padding-top:18%;
+  margin: auto;
+
+  
+}
+.containerslide img
+{
+  width:400px;
+  
+  padding-left:50px;
+}
+.add
+{
+  color:rgb(216, 162, 12);
+  width:100%;
+}
+.addcart
+{
+  width:100%;
+  height:100vh;
+  background-color: rgb(0, 0, 0,0.764);
+  position:fixed;
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  border-radius: 10px;
+}
+.addcontaint 
+{
+  width:50%;
+  height:400px;
+  margin: auto;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top:50px;
+  border-radius:10px;
+  border:3px solid orange;
 }
-
-.App-link {
-  color: #61dafb;
+.inpucart 
+{
+  width: 80%;
+  height:80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  background-color: rgb(220, 232, 232);;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inpucart input
+{
+  width: 80%;
+  height: 60%;
+  padding:8px;
+  margin:10px;
+  color:rgb(218,165,32);
+  border-radius: 8px;
+  background-color: rgb(220, 232, 232);
+  outline:3px solid orange;
+}
+.buttonadd
+{
+  margin-top:25px;
+  margin-top: 5px;
+  padding: 1%;
+  color:rgb(6, 6, 5) ;
+  background-color:orange;
+}
+.closebutton
+{
+  background-color: aliceblue;
+  margin-left:600px;
+  border-radius: 5px;
+  border:0px solid rgb(117, 113, 113);
+}
+.foot
+{
+  width: 100%;
+  height: 30%;
+  border-top:5px solid rgb(218,165,32);
+}
+.foot p
+{
+  color:rgb(218,165,32); 
+  letter-spacing: 1.5rem;
+  size:600px;
+  text-align: center;
+  width:100%;
 }
