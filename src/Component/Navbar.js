@@ -3,8 +3,10 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import '../App.css';
 import Addbutton from './Addbutton';
+import { Link } from "react-router-dom";
 
 import { useState } from 'react';
+
 const Navbar = ({addmoviess}) => {
   const [Show,setShow]=useState(true)
   return (
@@ -12,12 +14,15 @@ const Navbar = ({addmoviess}) => {
 
     <div className='barmenu'><button onClick={()=>setShow(!Show)}><FaIcons.FaBars/> </button>
       </div>
-{Show ?(
+{Show ?
+(
    <ul className='navclass' >
-     <li className='lib'><h2><AiIcons.AiOutlineHome/></h2> <h4>Home</h4> </li>
+     <li className='lib'><h2><AiIcons.AiOutlineHome/></h2>
+     <Link to="/"><h4> Home</h4> </Link> </li>
      <li className='lib'><h2><Addbutton addmoviess={addmoviess}/></h2><h4>Add</h4></li>
      
   </ul>):null}
+  
 </div>
   )
 }

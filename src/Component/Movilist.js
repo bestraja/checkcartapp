@@ -7,8 +7,10 @@ const Movilist=({movies,text,rate}) => {
     {
     movies
     
-    .filter((el)=>el.title.toLowerCase().includes(text.toLowerCase())||el.rate==rate)
+    .filter((el)=>el.title.toLowerCase().includes(text.toLowerCase())||el.rate===rate)
     .map((el)=><Movicart movie={el}/>)
+    
+    
   } 
     </div>
   );
